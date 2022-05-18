@@ -1,84 +1,64 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Jogo da Memória</title>
 </head>
 <body>
-    <header class="header-wrapper">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-itens">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="#">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
+    <main class="memory-game">
+        <div class="card" data-card="bowser">
+            <img src="./Image/bowser.jpg" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
         </div>
-        <h1>Edson Benedette</h1>
-        <h2>Developer ???</h2>
-        <div class="social-media">
-            <a href="#">LinkedIn</a>
-            <a href="#">Gitub</a>
+        <div class="card" data-card="luigi">
+            <img src="./Image/luigi.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
         </div>
-    </header>
-    <main class="container">
-        <div class="card-container">
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, totam repudiandae velit quis dolores, ducimus mollitia pariatur obcaecati, vero alias corrupti dolore explicabo. Harum qui recusandae inventore incidunt ea a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni, quod facilis beatae quisquam laborum porro repellat sed dignissimos at doloribus quas. Id et animi voluptatum magni, repellendus iure! Consequatur?
-            </div>
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Gitub</h2>
-                    <p>Veja meus projetos</p>
-                </div>
-            </div>
+        <div class="card" data-card="mario">
+            <img src="./Image/mario.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
         </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>LinkedIn</h2>
-                    <p>Acompanhe minha carreira!</p>
-                </div>
-            </div>
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, totam repudiandae velit quis dolores, ducimus mollitia pariatur obcaecati, vero alias corrupti dolore explicabo. Harum qui recusandae inventore incidunt ea a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni, quod facilis beatae quisquam laborum porro repellat sed dignissimos at doloribus quas. Id et animi voluptatum magni, repellendus iure! Consequatur?
-            </div>
+        <div class="card" data-card="peach">
+            <img src="./Image/peach.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
         </div>
-        <div class="card-container">
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, totam repudiandae velit quis dolores, ducimus mollitia pariatur obcaecati, vero alias corrupti dolore explicabo. Harum qui recusandae inventore incidunt ea a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni, quod facilis beatae quisquam laborum porro repellat sed dignissimos at doloribus quas. Id et animi voluptatum magni, repellendus iure! Consequatur?
-            </div>
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Instagram</h2>
-                    <p>Meu dia-a-dia ;)</p>
-                </div>
-            </div>
+        <div class="card" data-card="toad">
+            <img src="./Image/toad.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="yoshi">
+            <img src="./Image/yoshi.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="bowser">
+            <img src="./Image/bowser.jpg" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="luigi">
+            <img src="./Image/luigi.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="mario">
+            <img src="./Image/mario.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="peach">
+            <img src="./Image/peach.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="toad">
+            <img src="./Image/toad.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
+        </div>
+        <div class="card" data-card="yoshi">
+            <img src="./Image/yoshi.png" alt="face da carta" class="card-front">
+            <img src="./Image/box.png" alt="verso da carta" class="card-back">
         </div>
     </main>
-    <footer class="footer">
-        Feito por Edson Benedette
-    </footer>
+    <script src="./script.js"></script>
+    <button onclick="window.location.reload()">Novo Jogo</button>
 </body>
 </html>
